@@ -7,9 +7,12 @@
 .top {
     display: flex;
     width: 100%;
-    border-bottom: 2px dashed grey;
-    @phone {
+    border-bottom: 2px dashed @silver;
+    @media @phone {
+        display: flex;
         flex-direction: column;
+        padding-left: 80px;
+        
     }
 }
 
@@ -20,15 +23,18 @@
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    @phone {
+    @media @phone {
         width: 90%;
-
+        
     }
 }
 .text-container nav {
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
+    @media @phone {
+        justify-content: center;
+    }
 }
 .nav-bar a{
     text-decoration: none;
@@ -38,6 +44,7 @@
 	box-sizing: border-box;
 	border: none;
     width: 80px;
+
 }
 
 
