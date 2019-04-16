@@ -1,1 +1,44 @@
-// Navigation Styles here
+// Navigation code here
+// nav {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+.top {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px dashed grey;
+    @phone {
+        flex-direction: column;
+    }
+}
+
+.top .text-container {
+    width: 48%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    @phone {
+        width: 90%;
+
+    }
+}
+.text-container nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+	font-size: 15px;
+	height: 30px;
+	box-sizing: border-box;
+	border: none;
+    width: 80px;
+}
+
+
+    
